@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-export const Profile = ({username, tag, location, avatar,followers, views, likes}) => {
+export const Profile = ({username, tag, location, avatar,stats}) => {
     return (<div class="profile">
   <div class="description">
     <img
@@ -15,15 +15,15 @@ export const Profile = ({username, tag, location, avatar,followers, views, likes
   <ul class="stats">
     <li>
       <span class="label">Followers</span>
-      <span class="quantity">{followers}</span>
+      <span class="quantity">{stats.followers}</span>
     </li>
     <li>
       <span class="label">Views</span>
-      <span class="quantity">{views}</span>
+      <span class="quantity">{stats.views}</span>
     </li>
     <li>
       <span class="label">Likes</span>
-      <span class="quantity">{likes}</span>
+      <span class="quantity">{stats.likes}</span>
     </li>
   </ul>
 </div>)
@@ -34,7 +34,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
-};
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+ };
