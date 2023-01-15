@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types';
-import { GoLocation } from 'react-icons/go'
-import { HiOutlineUserCircle} from 'react-icons/hi'
+import { GoLocation } from 'react-icons/go';
+import { HiOutlineUserCircle } from 'react-icons/hi';
+import { ProfileCard, UserCard,UserAvatar, UserName, UserTag,UserLocation } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name"><HiOutlineUserCircle style={{width: "36", height: "36"}} />{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location"><GoLocation style={{width: "36", height: "36"}} />{location}</p>
-      </div>
+    <ProfileCard>
+      <UserCard>
+        <UserAvatar src={avatar} alt={username} width="200px"/>
+        <UserName><HiOutlineUserCircle style={{width: "36", height: "36"}} />{username}</UserName>
+        <UserTag>@{tag}</UserTag>
+        <UserLocation><GoLocation style={{width: "36", height: "36"}} />{location}</UserLocation>
+      </UserCard>
 
       <ul className="stats">
         <li>
@@ -26,7 +27,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
           <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </ProfileCard>
   );
 };
 
