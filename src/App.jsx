@@ -14,11 +14,13 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+        // justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
+        gap: '20px',
         fontSize: 40,
         color: '#010101',
-      }}
+             }}
     >
       <Profile
         username={user.username}
