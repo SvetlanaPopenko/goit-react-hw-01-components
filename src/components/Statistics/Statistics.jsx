@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { StatisticsSection, StatisticsTitle, StatisticsList, StatisticItem } from './Statistics.styled';
+import { StatisticsSection, StatisticsTitle, StatisticsList, StatisticItem, StatisticsLabel, StatisticsPercentage } from './Statistics.styled';
 
 export const Statistics = ({ stats, title }) => {
   return (
@@ -9,8 +9,8 @@ export const Statistics = ({ stats, title }) => {
       <StatisticsList>
         {stats.map(({ id, label, percentage }) => (
           <StatisticItem key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+            <StatisticsLabel>{label}</StatisticsLabel>
+            <StatisticsPercentage>{percentage}%</StatisticsPercentage>
           </StatisticItem>
         ))}
       </StatisticsList>
