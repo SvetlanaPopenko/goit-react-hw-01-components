@@ -19,6 +19,7 @@ export const StatisticsList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 `;
 export const StatisticItem = styled.li`
   display: flex;
