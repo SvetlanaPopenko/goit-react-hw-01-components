@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types';
-import { FriendCard, FriendStatus, FriendAvatar, FriendName } from './FriendListItem.styled';
+import {
+  FriendCard,
+  FriendStatus,
+  FriendAvatar,
+  FriendName,
+} from './FriendListItem.styled';
 
 export const FriendListItem = ({ friend: { id, avatar, name, isOnline } }) => {
   return (
@@ -13,7 +18,7 @@ export const FriendListItem = ({ friend: { id, avatar, name, isOnline } }) => {
 
 FriendListItem.propTypes = {
   friend: PropTypes.exact({
-    id:PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
