@@ -11,7 +11,7 @@ export const ProfileCard = styled.div`
     width: 400px;
    border-radius:30px;
    background-color: #8a2be266;
-    box-shadow: inset 5px 15px 27px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 5px 15px 27px -10px rgba(0, 0, 0, 0.5);
 `
 
 export const UserCard = styled.div`
