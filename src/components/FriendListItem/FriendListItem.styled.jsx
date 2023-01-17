@@ -10,6 +10,10 @@ export const FriendCard = styled.li`
   background-color: #26d2f3;
   box-shadow: inset 0px 1px 45px 1px #0571d5;
   width: 250px;
+  :hover{
+    cursor: pointer;
+    
+  }
 `;
 
 export const FriendStatus = styled.span`
@@ -35,4 +39,7 @@ margin-right: 10px;
 
 export const FriendName=styled.p`
     color:#4d078e;
+    :hover{
+      color: #FFFFFF;
+    }
 `
