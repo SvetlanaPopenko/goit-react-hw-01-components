@@ -16,7 +16,7 @@ export const TableThead = styled.thead`
 export const TableTr = styled.tr`
   text-align: center;
   :hover {
-    color: white;
+    color: red;
     cursor: pointer;
   }
 `;
