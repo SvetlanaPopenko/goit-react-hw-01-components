@@ -18,7 +18,7 @@ export const TableTr = styled.tr`
   :hover {
     color: white;
     cursor: pointer;
-     }
+  }
 `;
 export const TableTh = styled.th`
   font-size: 36px;
@@ -30,6 +30,4 @@ export const TableTd = styled.td`
   font-size: 32px;
   background-color: yellow;
   padding: 10px;
-  :hover {
-  }
 `;
