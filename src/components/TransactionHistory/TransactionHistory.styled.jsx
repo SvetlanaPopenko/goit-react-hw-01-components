@@ -15,11 +15,10 @@ export const TableThead = styled.thead`
 `;
 export const TableTr = styled.tr`
   text-align: center;
-  :hover,
-  :focus {
+  :hover {
     color: white;
     cursor: pointer;
-  }
+     }
 `;
 export const TableTh = styled.th`
   font-size: 36px;
