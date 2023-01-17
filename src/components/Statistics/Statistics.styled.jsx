@@ -28,11 +28,11 @@ export const StatisticItem = styled.li`
   justify-content: center;
   padding: 10px 20px;
   background-color: ${getRandomHexColor};
-  `;
+`;
 
 export const StatisticsLabel = styled.span`
-    color: white;
-`
+  color: white;
+`;
 export const StatisticsPercentage = styled.span`
-    color: white;
-`
+  color: white;
+`;
