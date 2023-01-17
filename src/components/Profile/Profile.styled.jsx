@@ -28,23 +28,23 @@ export const UserAvatar = styled.img`
 export const UserName = styled.p`
   margin: 0 auto;
   font-weight: bold;
-  :hover{
-    color:#FFFFFF;
-    cursor:pointer;
+  :hover {
+    color: #ffffff;
+    cursor: pointer;
   }
 `;
 export const UserTag = styled.p`
   margin: 0 auto;
-  :hover{
-    color:#FFFFFF;
-    cursor:pointer;
+  :hover {
+    color: #ffffff;
+    cursor: pointer;
   }
 `;
 export const UserLocation = styled.p`
   margin: 0 auto;
-  :hover{
-    color:#FFFFFF;
-    cursor:pointer;
+  :hover {
+    color: #ffffff;
+    cursor: pointer;
   }
 `;
 export const StatsList = styled.ul`
@@ -63,10 +63,10 @@ export const StatsItems = styled.li`
   outline: 1px solid grey;
   padding: 0 20px;
   width: 33.33%;
-  :hover{
-    background-color:violet;
-    cursor:pointer;
-    color:#FFFFFF;
+  :hover {
+    background-color: violet;
+    cursor: pointer;
+    color: #ffffff;
   }
 `;
 
